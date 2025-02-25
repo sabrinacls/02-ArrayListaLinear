@@ -1,5 +1,3 @@
-// Claudio Souza Nunes
-
 #include <iostream>
 using namespace std;
 
@@ -105,5 +103,24 @@ void inserirElemento()
 // deve ser implementada como resposta ao exercicio
 void buscarElemento()
 {
+	int busca = 0;
+	int invalido = 0;
+	cout << "Escreva um numero: ";
+	cin >> busca;
 
+	for (int n = 0; n < nElementos; n++) {
+		if (busca == lista[n]) {
+			cout << "exibir: " << n << endl;
+			invalido++;
+		}
+	}
+
+	if (invalido == 0) {
+		cout << "nao existe" << endl;
+	}
+
+
+		
+
+	
 }
